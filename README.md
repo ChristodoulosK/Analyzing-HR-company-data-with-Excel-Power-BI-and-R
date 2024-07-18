@@ -32,7 +32,8 @@ Lastly, we would also need to see the tenure in years of people who have left,  
 There were rumors circulating in the company that women are paid less than men and that gender accounted for differences in salary. So naturally, the thing that caught our attention first was whether there were any gender pay disparities in the company. We started of by comparing initial/gross salaries per gender and department, using pivot tables. Initial pivot tables indicated that the average female was being paid higher than the average male in HR and Accounting, whiles males were being paid marginally higher in Finance and generally higher in the remaining departments. However, the average wage difference between male and female accross departments, races and countries was not that wide. This can be observed by a simple observation of the pivot table data, but we run a t-test between the two groups as well, using R.
 
 Assumption checks: 
-# Load necessary libraries
+#Load necessary libraries
+
 library(readxl)
 library(ggplot2)
 library(stats)
@@ -58,7 +59,7 @@ qqline(male_salaries, col = "red")
 var_test <- var.test(female_salaries, male_salaries)
 print(var_test)
 
-# Perform the independent t-test
+#Perform the independent t-test
 
 if(var_test$p.value > 0.05) {  t_test_result <- t.test(female_salaries, male_salaries, var.equal = TRUE)} else {  t_test_result <- t.test(female_salaries, male_salaries, var.equal = FALSE)}
 
@@ -71,4 +72,6 @@ Two Sample t-test data: female_salaries and male_salaries t = -0.22754, df = 12,
 
 As per the t-test results, wages between men and women under abovemtioned circusmtances are not statistically significant either.
 
+#what-next
 
+Curiosity got the best of us, so we decided to further investigate the demographics of the company. First things first, pivot tables were created which demonstrated that the average age of women and men is arguably the same, even in differing career stage levels.
