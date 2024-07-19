@@ -27,7 +27,7 @@ Lastly, we would also need to see the tenure in years of people who have left,  
 
 **Starting of with the data analysis**
 
-#the-hot-topic
+# the-hot-topic
 
 There were rumors circulating in the company that women are paid less than men and that gender accounted for differences in salary. So naturally, the thing that caught our attention first was whether there were any gender pay disparities in the company. We started of by comparing initial/gross salaries per gender and department, using pivot tables. Initial pivot tables indicated that the average female was being paid higher than the average male in HR and Accounting, whiles males were being paid marginally higher in Finance and generally higher in the remaining departments. However, the average wage difference between male and female accross departments, races and countries was not that wide. This can be observed by a simple observation of the pivot table data, but we run a t-test between the two groups as well, using R.
 
@@ -74,4 +74,12 @@ As per the t-test results, wages between men and women under abovemtioned circus
 
 #what-next
 
-Curiosity got the best of us, so we decided to further investigate the demographics of the company. First things first, pivot tables were created which demonstrated that the average age of women and men is arguably the same, even in differing career stage levels.
+Curiosity got the best of us, so we decided to further investigate the demographics of the company. First things first, pivot tables were created which demonstrated that the average age of women and men is arguably the same, even in differing career stage levels. Also, females seem to earn more in advanced and associate position, while their male counterparts earn more on entry and senior-level positions.
+
+# Race
+
+Statistics about race unraveled many interesting interplays. Firstly, that the company is predomiantely Asian (40%), with 14% of Asians occupying senior positions, followed by latinos and caucasians. The most interesting part would concern the black workers. Even though they make up only 7% of the company, most of them, in both gender (2,2% for females and 2,6% for males) occupy senior positions. Especially for black females, they receive the biggest bonuses (11%) and seem to be, on average, the best paid race in the company, at an average salary of 141.860 euros annually accross departments, followed by 140,772 euros for Asian males. Caucasian females seem to be the best paid in accounting and latino females in marketing and sales. Latino males also seem to dominate on sales, caucasian males on accounting and finance, asian males in marketing, IT and engineering while the rest departments reward black employees the highest. Overall, this would prove a track record of solid professional progress for black women, as they seem to earn the most in most departments, despite accouting for just 4% of the workforce. 
+
+# Countries
+
+In any case, we are employees of a multinational organisation and we ought to decipher data on an international basis. We can see that our organisation conducts its' business on 3 countries: the United States of America, China and Brazil. First big thing to notice is that China offers more well-paid opportunities in Finance, Human Resources and IT. All salaries have been standarized by the way, so as to have comparable purchasing power metrics. Brazil and the US are tied, as both offer better salary opportunities in two departments each, Brazil in Engineering and Marketing and the US in Accounting and Sales, for both men and women, thereby establishing a clear country-to-salary trend. 
